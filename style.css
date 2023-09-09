@@ -1,0 +1,292 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;  
+    scroll-padding-top:2rem ;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    padding: 50px 10%;
+}
+
+img{
+    width: 100%;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 5%;
+    transition: 0.2s;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 200px;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 20px;
+    padding: 11px 25px;
+    font-weight: 500;
+    color: black;
+}
+.navbar a:hover{
+    color:dodgerblue
+}
+#menu-icon{
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+.home{
+    padding: 100px;
+    color:white
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    color: orange;
+    gap:2rem;
+}
+.home-text span{
+    color:rgb(107, 142, 107);
+    font-size: 20px;
+    padding-top: 3%;
+}
+.home-text h1{
+    flex: 1 1 17rem;
+    font-size: 35px;
+    color:rgb(107, 142, 107)
+}
+.home-text{
+    flex: 1 1 17rem;
+    font-size: 1.5rem;
+}
+.home-img{
+    flex: 1 1 17rem;
+}
+.btn{
+    background-color: orange;
+    padding: 1%;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.btn:hover{
+    background-color: dodgerblue;
+}
+.products{
+    padding: 5% 10%;
+    background-color: rgba(232,215,195,1);
+}
+.products .heading{
+    text-align: center;
+}
+.heading span{
+    font-size: 20px;
+    color: black;
+}
+.heading h1{
+    font-size: 30px;
+    color: green;
+}
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.shop-items .box{
+    background-color: green;
+    flex: 1 1 10rem;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+.box{
+    color: white;
+}
+.box p{
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+.box-img img{
+    height: 200px;
+    width: 200px;
+}
+.stars{
+    color:orange;
+}
+.btn1{
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 30px; 
+}
+.box .btn1:hover{
+    background-color:dodgerblue;
+}
+.about-text .btn1{
+    background-color:dodgerblue;
+}
+.about-text .btn1:hover{
+    background-color: blue;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 5%;
+    background-image: url(./background.jpg);
+    gap:4rem;
+    /* background-color: rgb(240, 247, 249);  */
+}
+.about-img{
+    flex: 1 1 10rem;
+}
+.about-text{
+    flex: 1 1 10rem;
+}
+.about-text h2{
+   font-weight:bolder; 
+   color: dodgerblue;
+   font-size: 50px;
+}
+.about-text h1{
+    font-size: 40px;  
+ }
+.about-text p{
+    font-size: 20px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: justify;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #006032;
+}
+.social a{
+    font-size: 27px;
+}
+.social a i{
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+    margin-left:1rem;
+}
+.social a i:hover{
+    color: #f7be00;
+}
+.links{
+    margin: 2rem 0 2rem;
+}
+.links a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    padding: 1rem;
+}
+.links a:hover{
+    color: #f7be00;
+}
+.contact p{
+    color: white;
+}
+@media (max-width:1150px) {
+    header{
+        padding: 18px 7%;
+    }
+    section{
+        padding:50px 7% ;
+    }
+    .home-text h1{
+        font-size: 2rem;
+    }
+    .home-text p{
+        font-size:1.5rem ;
+    }
+}
+@media (max-width:800px) {
+    header{
+        padding: 11px 4%;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    header .navbar{
+       position: absolute; 
+       top:-500px;
+       left:0;
+       right:0;
+       display:flex;
+       flex-direction: column;
+       background-color: orange;
+       border-top: 2px solid black;
+       text-align: left;
+    }
+    .navbar .active{
+        top:100%;
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display:block;
+        color: green;
+    }
+    .home-text span{
+        font-size: 1rem;
+    }
+    .home-text h1{
+        font-size: 1.5rem;
+    }
+    .home-text p{
+        font-size: 1rem;
+    }
+    .home{
+        flex-direction: row;
+    }
+    .heading h1{
+        font-size: 1.5rem;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }  
+}
+@media (max-width:500px){
+    .links{
+        display: flex;
+        flex-direction: column;
+    }  
+    .about h1{
+        font-size: 2rem;
+    }  
+}
